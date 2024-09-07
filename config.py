@@ -11,16 +11,18 @@ load_dotenv()
 # -----------------------------------------------------
 API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH")
+
+EVAL = list(map(int, getenv("EVAL", "7427691214 7045191057").split()))
 # ------------------------------------------------------
 BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
-OWNER_USERNAME = getenv("OWNER_USERNAME","harsh_un")
+OWNER_USERNAME = getenv("OWNER_USERNAME","Ownergit")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME" , "kira_probot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "NexikoBot")
 # --------------------------------------------------------
-BOT_NAME = getenv("BOT_NAME" , "神 𝗞ɪʀᴀ")
+BOT_NAME = getenv("BOT_NAME" , "Nexiko")
 # ---------------------------------------------------------
-ASSUSERNAME = getenv("ASSUSERNAME" , "UNB")
+ASSUSERNAME = getenv("ASSUSERNAME" , "MissYumikoo")
 # ---------------------------------------------------------
 
 
@@ -35,10 +37,10 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # ----------------------------------------------------------------
 
 # ----------------------------------------------------------------
-LOGGER_ID = int(getenv("LOGGER_ID", "-1002040932096"))
+LOGGER_ID = int(getenv("LOGGER_ID", -1002237336934))
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-OWNER_ID = int(getenv("OWNER_ID", "6253265083"))
+OWNER_ID = int(getenv("OWNER_ID", 7427691214))
 # -----------------------------------------------------------------
 # -----------------------------------------------------------------
 
@@ -53,7 +55,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 # ----------------------------------------------------------------
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/un-bots/cronus",
+    "https://github.com/DAXXTEAM/DAXXMUSIC",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv(
@@ -67,8 +69,8 @@ GIT_TOKEN = getenv(
 
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/unb_info")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/UNB_SUPPORT")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ALLTYPECC")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/gitwizardbypass")
 # ------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 
@@ -82,6 +84,7 @@ SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/UNB_SUPPORT")
 # --------------------------------------------------------------------------------
 # --------------------------------------------------------------------------------
 # --------------------------------------------------------------------------------
+
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
 AUTO_LEAVE_ASSISTANT_TIME = int(getenv("ASSISTANT_LEAVE_TIME", "9000"))
 SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION", "9999999"))
@@ -141,13 +144,13 @@ confirmer = {}
 # ------------------------------------------------------------------------
 # ------------------------------------------------------------------------
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/0fb5799f17005b83a8d14.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/cfbdee8103102bcb2e5da.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/file/0fb5799f17005b83a8d14.jpg"
+    "PING_IMG_URL", "https://telegra.ph/file/00360393a15daf7fc4e9d.jpg"
 )
 PLAYLIST_IMG_URL = "https://telegra.ph/file/d723f4c80da157fca1678.jpg"
-STATS_IMG_URL = "https://telegra.ph//file/ab50f5964ca3cb0ef3abf.jpg"
+STATS_IMG_URL = "https://telegra.ph/file/d30d11c4365c025c25e3e.jpg"
 TELEGRAM_AUDIO_URL = "https://telegra.ph/file/48f39202823b358203234.jpg"
 TELEGRAM_VIDEO_URL = "https://telegra.ph/file/e575ae40d6635250974e1.jpg"
 STREAM_IMG_URL = "https://telegra.ph/file/03efec694e41e891b29dc.jpg"
@@ -159,6 +162,7 @@ SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/6c741a6bc1e1663ac96fc.jpg"
 
 # ------------------------------------------------------------------------
 # ------------------------------------------------------------------------
+
 # ------------------------------------------------------------------------
 # ------------------------------------------------------------------------
 def time_to_seconds(time):
